@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADGP">
-        <activity android:name=".wo.wo1activity"></activity>
-        <activity android:name=".MainActivity"
+        <activity android:name=".wo.wo1.wo1activity"></activity>
+        <activity android:name=".wo.wo1activity" />
+        <activity
+            android:name=".MainActivity"
             android:configChanges="locale|orientation"
             android:label="@string/app_name"
             android:theme="@style/Theme.MADGP.NoActionBar">
