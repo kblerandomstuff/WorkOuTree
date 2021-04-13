@@ -6,4 +6,11 @@
     <string name="Lok">Lok</string>
     <string name="Him">Him</string>
     <string name="Shuen">Shuen</string>
+    <string name="Lok1">Lok1</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_startwo">Start workout</string>
+    <string name="nav_myinfo">My body information</string>
+    <string name="nav_about">About app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
