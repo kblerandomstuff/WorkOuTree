@@ -58,7 +58,6 @@ public class timerFragment extends Fragment {
                         tv.setText(cs);
                         //progress bar dont work
                         double progress = millisUntilFinished / duration;
-                        Log.d("krs",Double.toString(progress));
                         pb.setProgress((int) progress);
                     }
 
