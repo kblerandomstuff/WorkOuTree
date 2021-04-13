@@ -22,7 +22,7 @@
 
         <fragment
             android:id="@+id/fragment"
-            android:name="ovh.krs.madgp.wo.wod1Fragment"
+            android:name="ovh.krs.madgp.wo.wod2Fragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom" />

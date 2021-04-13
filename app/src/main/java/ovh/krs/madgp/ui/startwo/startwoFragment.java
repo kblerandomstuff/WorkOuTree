@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import ovh.krs.madgp.R;
 import ovh.krs.madgp.wo.wo1activity;
+import ovh.krs.madgp.wo.wo2activity;
 
 public class startwoFragment extends Fragment {
 
@@ -28,17 +29,20 @@ public class startwoFragment extends Fragment {
         wo1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openNewActivity();
+                Intent intent = new Intent(getActivity(), wo1activity.class);
+                startActivity(intent);
             }
         });
-
+        wo2 = root.findViewById(R.id.card_wo2);
+        wo2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), wo2activity.class);
+                startActivity(intent);
+            }
+        });
         return root;
 
 
     }
-    public void openNewActivity(){
-        Intent intent = new Intent(getActivity(), wo1activity.class);
-        startActivity(intent);
-    }
-
 }

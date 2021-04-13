@@ -1,6 +1,7 @@
 package ovh.krs.madgp.wo;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
@@ -33,10 +34,12 @@ public class timerFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        SharedPreferences pref = getContext().getSharedPreferences("AppPref", 0);
+
         TextView tv = view.findViewById(R.id.tv_timer);
         Button btn = view.findViewById(R.id.btn_start);
         ProgressBar pb = (ProgressBar) view.findViewById(R.id.progressBar);
-        long duration = 10000;
+        long duration = pref.getLong("duration", 1000);
         String ds = String.format("%02d:%02d",
                 TimeUnit.MILLISECONDS.toMinutes(duration) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(duration)),
                 TimeUnit.MILLISECONDS.toSeconds(duration) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
