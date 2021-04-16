@@ -13,4 +13,5 @@
     <string name="nav_about">About app</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hi2">hi2</string>
 </resources>
