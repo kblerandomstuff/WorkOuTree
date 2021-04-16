@@ -44,7 +44,7 @@ public class wod1Fragment extends Fragment {
         editor.putLong("duration", 10000);
         editor.commit();
         //work out detail
-        tv.setText("workout 1");
+        tv.setText("Reverse Plank");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

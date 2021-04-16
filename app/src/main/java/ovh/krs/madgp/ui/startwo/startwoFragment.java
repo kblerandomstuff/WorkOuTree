@@ -41,6 +41,8 @@ public class startwoFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
         return root;
 
 

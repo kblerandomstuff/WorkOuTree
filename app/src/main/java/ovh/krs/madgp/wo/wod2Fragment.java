@@ -39,10 +39,10 @@ public class wod2Fragment extends Fragment {
         SharedPreferences pref = getContext().getSharedPreferences("AppPref", 0); // 0 - for private mode
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
-        editor.putLong("duration", 100000);
+        editor.putLong("duration", 30000);
         editor.commit();
         //work out detail
-        tv.setText("workout 2");
+        tv.setText("Triple Lunge");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

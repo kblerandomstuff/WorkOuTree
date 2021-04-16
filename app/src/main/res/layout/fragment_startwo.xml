@@ -34,7 +34,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="194dp"
                         android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/testimg"
+                        app:srcCompat="@drawable/sw1"
 
                         />
 
@@ -48,14 +48,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="title one"
+                            android:text="Reverse Plank"
                             android:textAppearance="?attr/textAppearanceHeadline6" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="subtitle"
+                            android:text="10 second"
                             android:textAppearance="?attr/textAppearanceBody2"
                             android:textColor="?android:attr/textColorSecondary" />
 
@@ -63,7 +63,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:text="fhjfhakjsdfhjkahsjkdfhjkahswdfjk   details"
+                            android:text="For Lateral deltoid, Posterior deltoid, Rectus abdominis, Obliques, Gluteus maximus and Hamstring"
                             android:textAppearance="?attr/textAppearanceBody2"
                             android:textColor="?android:attr/textColorSecondary" />
 
@@ -91,7 +91,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="194dp"
                         android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/testimg"
+                        app:srcCompat="@drawable/sw2"
 
                         />
 
@@ -105,14 +105,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="title one"
+                            android:text="Triple Lunge"
                             android:textAppearance="?attr/textAppearanceHeadline6" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="subtitle"
+                            android:text="30 second"
                             android:textAppearance="?attr/textAppearanceBody2"
                             android:textColor="?android:attr/textColorSecondary" />
 
@@ -120,7 +120,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:text="fhjfhakjsdfhjkahsjkdfhjkahswdfjk   details"
+                            android:text="For Quadriceps and Gluteus maximus"
                             android:textAppearance="?attr/textAppearanceBody2"
                             android:textColor="?android:attr/textColorSecondary" />
 

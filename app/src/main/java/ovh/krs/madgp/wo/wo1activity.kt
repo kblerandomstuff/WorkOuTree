@@ -13,7 +13,7 @@ class wo1activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wo1)
         val assets = applicationContext.assets
-        val assetFileName = "work1.gif"
+        val assetFileName = "work1_.webp"
         val source = ImageDecoder.createSource(assets, assetFileName)
         val drawable = ImageDecoder.decodeDrawable(source)
         imageView.setImageDrawable(drawable)

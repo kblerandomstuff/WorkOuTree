@@ -13,7 +13,7 @@ class wo2activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wo2)
         val assets = applicationContext.assets
-        val assetFileName = "1.webp"
+        val assetFileName = "work2.webp"
         val source = ImageDecoder.createSource(assets, assetFileName)
         val drawable = ImageDecoder.decodeDrawable(source)
         imageView.setImageDrawable(drawable)
