@@ -17,7 +17,7 @@ import ovh.krs.madgp.wo.wo2activity;
 
 public class startwoFragment extends Fragment {
 
-    CardView wo1,wo2;
+    CardView wo1,wo2,wo3;
 
     private startwoViewModel startwoViewModel;
 
@@ -41,7 +41,14 @@ public class startwoFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
+        wo3 = root.findViewById(R.id.card_wo3);
+        wo3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), wo2activity.class);
+                startActivity(intent);
+            }
+        });
 
         return root;
 

@@ -11,6 +11,7 @@
         android:theme="@style/Theme.MADGP">
         <activity android:name=".wo.wo1activity" />
         <activity android:name=".wo.wo2activity" />
+        <activity android:name=".wo.wo3activity" />
         <activity
             android:name=".MainActivity"
             android:configChanges="locale|orientation"
