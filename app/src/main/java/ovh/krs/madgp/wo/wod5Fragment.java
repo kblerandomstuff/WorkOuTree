@@ -15,12 +15,12 @@ import ovh.krs.madgp.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link wod3Fragment#newInstance} factory method to
+ * Use the {@link wod5Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class wod3Fragment extends Fragment {
+public class wod5Fragment extends Fragment {
 
-    public wod3Fragment() {
+    public wod5Fragment() {
         // Required empty public constructor
     }
 
@@ -42,7 +42,7 @@ public class wod3Fragment extends Fragment {
         editor.putLong("duration", 30000);
         editor.commit();
         //work out detail
-        tv.setText("Single Leg Curl Combo");
+        tv.setText("Cross-body Plank");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,6 +1,6 @@
 package ovh.krs.madgp.wo
 
-import android.graphics.*
+import android.graphics.ImageDecoder
 import android.graphics.drawable.AnimatedImageDrawable
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,12 +8,12 @@ import kotlinx.android.synthetic.main.activity_wo1.*
 import ovh.krs.madgp.R
 
 
-class wo3activity : AppCompatActivity() {
+class wo4activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_wo3)
+        setContentView(R.layout.activity_wo4)
         val assets = applicationContext.assets
-        val assetFileName = "work3.webp"
+        val assetFileName = "work4.webp"
         val source = ImageDecoder.createSource(assets, assetFileName)
         val drawable = ImageDecoder.decodeDrawable(source)
         imageView.setImageDrawable(drawable)

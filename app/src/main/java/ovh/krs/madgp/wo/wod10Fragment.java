@@ -15,12 +15,12 @@ import ovh.krs.madgp.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link wod3Fragment#newInstance} factory method to
+ * Use the {@link wod10Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class wod3Fragment extends Fragment {
+public class wod10Fragment extends Fragment {
 
-    public wod3Fragment() {
+    public wod10Fragment() {
         // Required empty public constructor
     }
 
@@ -39,10 +39,10 @@ public class wod3Fragment extends Fragment {
         SharedPreferences pref = getContext().getSharedPreferences("AppPref", 0); // 0 - for private mode
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
-        editor.putLong("duration", 30000);
+        editor.putLong("duration", 10000);
         editor.commit();
         //work out detail
-        tv.setText("Single Leg Curl Combo");
+        tv.setText("Push-up To Side Plank");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

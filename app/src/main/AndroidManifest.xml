@@ -12,6 +12,18 @@
         <activity android:name=".wo.wo1activity" />
         <activity android:name=".wo.wo2activity" />
         <activity android:name=".wo.wo3activity" />
+        <activity android:name=".wo.wo4activity" />
+        <activity android:name=".wo.wo5activity" />
+        <activity android:name=".wo.wo6activity" />
+        <activity android:name=".wo.wo7activity" />
+        <activity android:name=".wo.wo8activity" />
+        <activity android:name=".wo.wo9activity" />
+        <activity android:name=".wo.wo10activity" />
+        <activity android:name=".wo.wo11activity" />
+        <activity android:name=".wo.wo12activity" />
+        <activity android:name=".wo.wo13activity" />
+        <activity android:name=".wo.wo14activity" />
+        <activity android:name=".wo.wo15activity" />
         <activity
             android:name=".MainActivity"
             android:configChanges="locale|orientation"
