@@ -10,7 +10,8 @@ import android.os.Bundle;
 import java.util.ArrayList;
 
 public class DBHelper extends SQLiteOpenHelper {
-
+    // If you change the database schema, you must increment the database version.
+    public static final int DATABASE_VERSION = 1;
     // Name of database
     private static final String DATABASE_NAME = "MyDBName.db";
 
@@ -42,8 +43,8 @@ public class DBHelper extends SQLiteOpenHelper {
     public boolean insertContact(String name, int second) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put("name", name);
-        contentValues.put("second", second);
+        contentValues.put("name", "q");
+        contentValues.put("second", 5);
         db.insert("contacts", null, contentValues);
         return true;
     }

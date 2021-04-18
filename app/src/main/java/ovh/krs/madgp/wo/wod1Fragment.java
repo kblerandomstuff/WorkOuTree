@@ -43,23 +43,27 @@ public class wod1Fragment extends Fragment {
         TextView tv = view.findViewById(R.id.wodtv);
         SharedPreferences pref = getContext().getSharedPreferences("AppPref", 0); // 0 - for private mode
         SharedPreferences.Editor editor = pref.edit();
+        db = new DBHelper(getContext());
         //set workout duration
         editor.putLong("duration", 10000 );
         editor.commit();
         //work out detail
         tv.setText("Reverse Plank");
+        db.insertContact("Reverse Plank", 10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fm = getFragmentManager();
                 timerFragment f = (timerFragment) fm.findFragmentByTag("timerFragment");
+
                 if (f == null) {
                     f = new timerFragment();
                     fm.beginTransaction()
                             .replace(R.id.fragment, f,"timerFragment")
                             .commit();
+
                 }
-                db.insertContact("Reverse Plank", 10);
+
             }
         });
         return view;
