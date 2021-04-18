@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADGP">
+        <activity android:name=".DateHistory"></activity>
+        <activity android:name=".DateItem" />
         <activity android:name=".wo.wo1activity" />
         <activity android:name=".wo.wo2activity" />
         <activity android:name=".wo.wo3activity" />

@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import ovh.krs.madgp.DBHelper;
 import ovh.krs.madgp.R;
 
 /**
@@ -22,6 +23,8 @@ import ovh.krs.madgp.R;
  */
 public class wod1Fragment extends Fragment {
 
+    private DBHelper db;
+    int idToUpdate = 0;
     public wod1Fragment() {
         // Required empty public constructor
     }
@@ -41,7 +44,7 @@ public class wod1Fragment extends Fragment {
         SharedPreferences pref = getContext().getSharedPreferences("AppPref", 0); // 0 - for private mode
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
-        editor.putLong("duration", 10000);
+        editor.putLong("duration", 10000 );
         editor.commit();
         //work out detail
         tv.setText("Reverse Plank");
@@ -56,6 +59,7 @@ public class wod1Fragment extends Fragment {
                             .replace(R.id.fragment, f,"timerFragment")
                             .commit();
                 }
+                db.insertContact("Reverse Plank", 10);
             }
         });
         return view;
