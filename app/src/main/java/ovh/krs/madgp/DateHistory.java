@@ -20,7 +20,7 @@ public class DateHistory extends Activity {
 
     // The view that shows a list in the XML
     private ListView listView;
-    Bundle dataBundle = this.getIntent().getExtras();
+    Bundle dataBundle = getIntent().getExtras();
     String date = dataBundle.toString();
 
     @Override
@@ -29,7 +29,7 @@ public class DateHistory extends Activity {
         setContentView(R.layout.activity_main);
 
         // Load all contacts from the database
-        db = new DBHelper(this);
+        db = new DBHelper(getApplicationContext());
         ArrayList<String> arrayList = db.getAllContacts(date);
 
         // Build an ArrayAdapter to show a list of items
