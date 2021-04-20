@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.myinfo">
+    tools:context=".ui.myinfo.myinfoFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:scrollbarSize="4dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_view"
@@ -25,15 +26,121 @@
 
                 <TextView
                     android:id="@+id/info_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Body Information"
+                    android:textSize="24sp" />
+
             </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Gender"
+                    android:textSize="36sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:textOff="Male"
+                    android:textOn="Female"
+                    android:thumb="@drawable/thumb"
+                    app:showText="true"
+                    app:track="@drawable/track" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Weight"
+                    android:textSize="36sp" />
+
+                <EditText
+                    android:id="@+id/et_kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:ems="5"
+                    android:hint="kg"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_weight2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Height"
+                    android:textSize="36sp" />
+
+                <EditText
+                    android:id="@+id/et_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:ems="5"
+                    android:hint="m"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
 
             <Button
                 android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:text="Button" />
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="BMI:"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/BMI"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_up"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_gravity="center_horizontal"
+                android:text="Update"
+                tools:layout_editor_absoluteY="289dp" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
