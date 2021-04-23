@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/tree_flip21" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip22" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip23" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip24" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip25" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip26" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip27" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip28" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip29" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip30" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip31" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip32" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip33" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip34" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip35" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip36" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip37" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip38" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip39" android:duration="50"/>
+    <item android:drawable="@drawable/tree_flip40" android:duration="50"/>
+</animation-list>
