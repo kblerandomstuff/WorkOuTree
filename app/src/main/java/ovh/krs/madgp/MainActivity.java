@@ -5,6 +5,8 @@ import android.view.Menu;
 
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -12,6 +14,8 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import ovh.krs.madgp.wo.HistoryListHomeFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -37,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         db = new DBHelper(this);
+
+        // [Fragment transaction] from home to home_history_list
+        FragmentTransaction fragmentTransaction_others = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction_others.add(R.id.fragment_container, new HistoryListHomeFragment());
+
     }
 
     @Override
@@ -52,4 +61,5 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
 }
