@@ -14,6 +14,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
 
 import ovh.krs.madgp.DBHelper;
@@ -26,14 +27,14 @@ public class HomeFragment extends Fragment {
     private ProgressBar pgb;
     private Button history_list_btn;
 
-    private TextView tv;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        tv = root.findViewById(R.id.textView);
+
 
         home_imageView = root.findViewById(R.id.home_imageView);
         pgb = root.findViewById(R.id.determinateBar);
@@ -41,8 +42,11 @@ public class HomeFragment extends Fragment {
         history_list_btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                tv.setText("Clicked!");
-
+                HistoryListHomeFragment historyListHomeFragment = new HistoryListHomeFragment();
+                FragmentManager manager = getFragmentManager();
+                manager.beginTransaction()
+                        .replace(R.id.home_layout, historyListHomeFragment, historyListHomeFragment.getTag())
+                        .commit();
             }
         });
 
