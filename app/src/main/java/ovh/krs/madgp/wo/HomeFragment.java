@@ -1,5 +1,6 @@
 package ovh.krs.madgp.wo;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import android.widget.ProgressBar;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import java.util.ArrayList;
@@ -28,11 +30,6 @@ public class HomeFragment extends Fragment {
     private AnimationDrawable slideShowAnimation;
     private ProgressBar pgb;
     private DBHelper db;
-    /*
-    private Bundle dataBundle = getIntent().getExtras();
-    String date = dataBundle.toString();
-
-     */
 
     @Nullable
     @Override
@@ -45,25 +42,18 @@ public class HomeFragment extends Fragment {
         history_list_btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new HistoryListHomeFragment());
-                fr.commit();
+                HistoryListHomeFragment historyListHomeFragment = new HistoryListHomeFragment();
+                FragmentManager manager = getFragmentManager();
+                manager.beginTransaction()
+                        .replace(R.id.fragment2, historyListHomeFragment, historyListHomeFragment.getTag())
+                        .commit();
+
             }
         });
-
-
-
-        //db = new DBHelper(getContext());
-        // db.getAllContacts(date);
-
-
-
 
 
         return view;
 
     }
-
-
 
 }

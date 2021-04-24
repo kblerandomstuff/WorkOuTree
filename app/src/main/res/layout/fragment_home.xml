@@ -111,4 +111,15 @@
         </LinearLayout>
     </LinearLayout>
 
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="ovh.krs.madgp.wo.HomeFragment"
+        android:layout_width="411dp"
+        android:layout_height="735dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,11 +41,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         db = new DBHelper(this);
-
-        // [Fragment transaction] from home to home_history_list
-        FragmentTransaction fragmentTransaction_others = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction_others.add(R.id.fragment_container, new HistoryListHomeFragment());
-
     }
 
     @Override
