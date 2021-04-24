@@ -1,4 +1,4 @@
-package ovh.krs.madgp.wo;
+package ovh.krs.madgp.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
