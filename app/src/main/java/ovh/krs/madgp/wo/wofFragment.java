@@ -1,5 +1,6 @@
 package ovh.krs.madgp.wo;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +10,12 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import ovh.krs.madgp.R;
+
+import static java.lang.String.valueOf;
 
 public class wofFragment extends Fragment {
 
@@ -28,6 +34,28 @@ public class wofFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_wof, container, false);
+        SharedPreferences gpref = getContext().getSharedPreferences("AppPref", 0);
+        SharedPreferences hpref = getContext().getSharedPreferences("woh", 0); // 0 - for private mode
+        SharedPreferences.Editor editor = hpref.edit();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String tss = dateFormat.format(new Date()); // Find todays date
+        String tempwo ="";
+        //editor.putLong("duration", 10000 );
+        String wofwoname = gpref.getString("woname", "");
+        if (hpref.getString("0", "")!=null){
+            for (int i = 49;i > -1;i--){
+                editor.putString(valueOf(i+1), hpref.getString(valueOf(i), null) );
+                editor.putString(valueOf(i+51), hpref.getString(valueOf(50+i), null) );
+            }
+        }
+        editor.putString(valueOf(0), tss);
+        editor.putString(valueOf(50), gpref.getString("woname", "") );
+        if (hpref.getString("wocount", null)==null){
+            editor.putInt("wocount", 1 );
+        }else {
+            editor.putInt("wocount", hpref.getInt("wocount", 1)+1 );
+        }
+        editor.commit();
         Button btna = view.findViewById(R.id.btn_a);
         Button btnb = view.findViewById(R.id.btn_b);
         btna.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +68,6 @@ public class wofFragment extends Fragment {
 
                     fm.beginTransaction()
                             .replace(R.id.fragment, f,"timerFragment")
-                            //.addToBackStack(null);  // uncomment this line if you want to be able to return to the prev. fragment with "back" button
                             .commit();
                 }
             }

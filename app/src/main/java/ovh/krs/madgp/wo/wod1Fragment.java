@@ -25,6 +25,7 @@ public class wod1Fragment extends Fragment {
 
     private DBHelper db;
     int idToUpdate = 0;
+    String woname = "Reverse Plank";
     public wod1Fragment() {
         // Required empty public constructor
     }
@@ -46,9 +47,10 @@ public class wod1Fragment extends Fragment {
         db = new DBHelper(getContext());
         //set workout duration
         editor.putLong("duration", 10000 );
+        editor.putString("woname", woname);
         editor.commit();
         //work out detail
-        tv.setText("Reverse Plank");
+        tv.setText(woname);
         db.insertContact("Reverse Plank", 10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
