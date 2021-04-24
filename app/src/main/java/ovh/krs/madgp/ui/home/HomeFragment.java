@@ -45,7 +45,7 @@ public class HomeFragment extends Fragment {
                 HistoryListHomeFragment historyListHomeFragment = new HistoryListHomeFragment();
                 FragmentManager manager = getFragmentManager();
                 manager.beginTransaction()
-                        .replace(R.id.home_layout, historyListHomeFragment, historyListHomeFragment.getTag())
+                        .replace(R.id.nav_host_fragment, historyListHomeFragment, historyListHomeFragment.getTag())
                         .commit();
             }
         });
