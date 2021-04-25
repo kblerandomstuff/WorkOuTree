@@ -42,7 +42,7 @@ public class wod14Fragment extends Fragment {
         editor.putLong("duration", 90000);
         editor.commit();
         //work out detail
-        tv.setText("Little Mermaid");
+        tv.setText("Little Mermaid   ~7 times\nFor Lateral deltoid, Serratus anterior, External oblique, Gracilis, Psoas major, Pectineus, Adductor longus, Adductor brevis and Adductor magnus");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

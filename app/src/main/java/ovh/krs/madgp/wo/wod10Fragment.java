@@ -42,7 +42,7 @@ public class wod10Fragment extends Fragment {
         editor.putLong("duration", 70000);
         editor.commit();
         //work out detail
-        tv.setText("Push-up To Side Plank");
+        tv.setText("Push-up To Side Plank   ~7 times\nFor Pectoralis, Abdominal Muscles, Serratus Anterios, Deltoid and Triceps Brachii");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

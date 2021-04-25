@@ -42,7 +42,7 @@ public class wod3Fragment extends Fragment {
         editor.putLong("duration", 70000);
         editor.commit();
         //work out detail
-        tv.setText("Single Leg Curl Combo");
+        tv.setText("Single Leg Curl Combo   ~7 times\nFor Biceps femoris, Gastrocnemius, Semitendinosus and Semimembranosus");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

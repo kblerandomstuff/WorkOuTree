@@ -42,7 +42,7 @@ public class wod2Fragment extends Fragment {
         editor.putLong("duration", 80000);
         editor.commit();
         //work out detail
-        tv.setText("Triple Lunge");
+        tv.setText("Triple Lunge   ~10 times\nFor Quadriceps and Gluteus maximus");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -42,7 +42,7 @@ public class wod4Fragment extends Fragment {
         editor.putLong("duration", 80000);
         editor.commit();
         //work out detail
-        tv.setText("Side Plank Combo");
+        tv.setText("Side Plank Combo   ~8 times\nFor Lateral deltoid, Serratus anterior, External oblique, Gracilis, Psoas major, Pectineus, Adductor longus, Adductor brevis and Adductor magnus");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -42,7 +42,7 @@ public class wod5Fragment extends Fragment {
         editor.putLong("duration", 90000);
         editor.commit();
         //work out detail
-        tv.setText("Cross-body Plank");
+        tv.setText("Cross-body Plank   ~8 times\nFor Rhomboideus, Deltoideus, Triceps brachii, Biceps brachii and Obliquus internus internus, Rectus femoris, Tensor fasciae latae, Tibialis anterior");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

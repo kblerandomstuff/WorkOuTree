@@ -42,7 +42,7 @@ public class wod8Fragment extends Fragment {
         editor.putLong("duration", 80000);
         editor.commit();
         //work out detail
-        tv.setText("Push-Up To Pike");
+        tv.setText("Push-Up To Pike   ~10 times\nFor Deltoid and Triceps Brachii");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

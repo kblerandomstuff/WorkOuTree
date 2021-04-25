@@ -42,7 +42,7 @@ public class wod12Fragment extends Fragment {
         editor.putLong("duration", 90000);
         editor.commit();
         //work out detail
-        tv.setText("Walk Out and Squat");
+        tv.setText("Walk Out and Squat   ~7 times\nFor Vastus lateralis, Biceps femoris, Gastrocnemius, Semitendinosus, Semimembranosus, Serratus Anterios, Abdominal Muscles");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

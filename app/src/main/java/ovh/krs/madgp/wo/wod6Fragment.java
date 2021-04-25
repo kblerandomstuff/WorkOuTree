@@ -42,7 +42,7 @@ public class wod6Fragment extends Fragment {
         editor.putLong("duration", 110000);
         editor.commit();
         //work out detail
-        tv.setText("Knees To Chest");
+        tv.setText("Knees To Chest   ~6 times\nFor Sartorius, lliopsoas, Adductor longus and Tensor fasciae latae");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

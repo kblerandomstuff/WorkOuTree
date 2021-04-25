@@ -42,7 +42,7 @@ public class wod7Fragment extends Fragment {
         editor.putLong("duration", 80000);
         editor.commit();
         //work out detail
-        tv.setText("Lunge and Burpee");
+        tv.setText("Lunge and Burpee   ~6 times\nFor Vastus lateralis, Vastus medialis, Rectus femoris, Adductor longis and Adductor magnus");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

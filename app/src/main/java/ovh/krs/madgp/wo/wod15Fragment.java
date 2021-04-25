@@ -42,7 +42,7 @@ public class wod15Fragment extends Fragment {
         editor.putLong("duration", 110000);
         editor.commit();
         //work out detail
-        tv.setText("Slide Out In Push-up");
+        tv.setText("Slide Out In Push-up   ~6 times\nFor Pectoralis, Abdominal Muscles, Serratus Anterios, Lateral deltoid and Serratus anterior");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

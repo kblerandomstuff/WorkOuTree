@@ -42,7 +42,7 @@ public class wod11Fragment extends Fragment {
         editor.putLong("duration", 80000);
         editor.commit();
         //work out detail
-        tv.setText("Squat Lunge Push-up Combo");
+        tv.setText("Squat Lunge Push-up Combo   ~5 times\nFor Pectoralis, Abdominal Muscles, Serratus Anterios, Deltoid, Triceps Brachii, Vastus lateralis, Vastus medialis and Rectus femoris");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

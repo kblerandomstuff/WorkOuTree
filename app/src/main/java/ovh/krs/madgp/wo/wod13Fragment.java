@@ -42,7 +42,7 @@ public class wod13Fragment extends Fragment {
         editor.putLong("duration", 90000);
         editor.commit();
         //work out detail
-        tv.setText("Lunge Climber");
+        tv.setText("Lunge Climber   ~9 times\nFor Vastus lateralis, Vastus medialis, Rectus femoris, Sartorius and lliopsoas");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

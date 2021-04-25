@@ -42,7 +42,7 @@ public class wod9Fragment extends Fragment {
         editor.putLong("duration", 90000);
         editor.commit();
         //work out detail
-        tv.setText("Lunge and Mountain Climber Combo");
+        tv.setText("Lunge and Mountain Climber Combo   ~7times\nFor Vastus lateralis, Vastus medialis, Rectus femoris, Deltoid and Triceps Brachii");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
