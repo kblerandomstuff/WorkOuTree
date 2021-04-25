@@ -53,7 +53,7 @@ public class wod1Fragment extends Fragment {
         editor.commit();
         //work out detail ##############################################this
         tv.setText(woname);
-        db.insertContact("Reverse Plank", 10);
+        db.insertContact("Reverse Plank",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

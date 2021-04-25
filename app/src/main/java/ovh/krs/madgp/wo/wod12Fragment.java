@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import ovh.krs.madgp.DBHelper;
 import ovh.krs.madgp.R;
 
 /**
@@ -19,7 +20,8 @@ import ovh.krs.madgp.R;
  * create an instance of this fragment.
  */
 public class wod12Fragment extends Fragment {
-
+    private DBHelper db;
+    String woname = "Walk Out and Squat";
     public wod12Fragment() {
         // Required empty public constructor
     }
@@ -38,12 +40,14 @@ public class wod12Fragment extends Fragment {
         TextView tv = view.findViewById(R.id.wodtv);
         SharedPreferences pref = getContext().getSharedPreferences("AppPref", 0); // 0 - for private mode
         SharedPreferences.Editor editor = pref.edit();
+        db = new DBHelper(getContext());
         //set workout duration
         editor.putLong("duration", 90000);
         editor.putString("woname", woname);
         editor.commit();
         //work out detail
-        tv.setText("Walk Out and Squat   ~7 times\nFor Vastus lateralis, Biceps femoris, Gastrocnemius, Semitendinosus, Semimembranosus, Serratus Anterios, Abdominal Muscles");
+        tv.setText(woname);
+        db.insertContact("Walk Out and Squat",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

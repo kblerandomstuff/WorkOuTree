@@ -1,4 +1,4 @@
-package ovh.krs.madgp.ui;
+ package ovh.krs.madgp.ui;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
