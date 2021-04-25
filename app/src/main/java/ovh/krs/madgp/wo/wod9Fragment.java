@@ -39,7 +39,7 @@ public class wod9Fragment extends Fragment {
         SharedPreferences pref = getContext().getSharedPreferences("AppPref", 0); // 0 - for private mode
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
-        editor.putLong("duration", 30000);
+        editor.putLong("duration", 90000);
         editor.commit();
         //work out detail
         tv.setText("Lunge and Mountain Climber Combo");
