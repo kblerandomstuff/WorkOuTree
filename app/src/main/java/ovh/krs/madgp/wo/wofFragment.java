@@ -50,7 +50,7 @@ public class wofFragment extends Fragment {
         }
         editor.putString(valueOf(0), tss);
         editor.putString(valueOf(50), gpref.getString("woname", "") );
-        if (hpref.getString("wocount", null)==null){
+        if (hpref.getInt("wocount", -1)==-1){
             editor.putInt("wocount", 1 );
         }else {
             editor.putInt("wocount", hpref.getInt("wocount", 1)+1 );

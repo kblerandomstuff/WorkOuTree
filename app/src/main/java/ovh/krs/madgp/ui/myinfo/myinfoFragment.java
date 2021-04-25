@@ -15,11 +15,13 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import java.util.ArrayList;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 
 import ovh.krs.madgp.DBHelper;
-import ovh.krs.madgp.DateHistory;
 import ovh.krs.madgp.R;
+import ovh.krs.madgp.ui.Addinfo;
+
 
 public class myinfoFragment extends Fragment {
 
@@ -45,10 +47,9 @@ public class myinfoFragment extends Fragment {
         myinfoViewModel = new ViewModelProvider(this).get(myinfoViewModel.class);
         View root = inflater.inflate(R.layout.fragment_myinfo, container, false);
 
-        et_kg = root.findViewById(R.id.et_kg);
-        et_m = root.findViewById(R.id.et_m);
-        BMI = root.findViewById(R.id.BMI);
 
+        //BMI = root.findViewById(R.id.BMI);
+/*
         bt_up = root.findViewById(R.id.bt_up);
         bt_up.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +58,14 @@ public class myinfoFragment extends Fragment {
                 Integer.parseInt(et_kg.getText().toString());
                 Integer.parseInt(et_m.getText().toString());
                 BMI.setText(String.valueOf(kg/m^2));
+            }
+        }); */
+        FloatingActionButton fab = root.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Addinfo.class);
+                startActivity(intent);
             }
         });
 /*

@@ -24,10 +24,10 @@
         tools:layout="@layout/fragment_myinfo" />
 
     <fragment
-        android:id="@+id/nav_mycol"
-        android:name="ovh.krs.madgp.ui.myinfo.myinfoFragment"
-        android:label="@string/nav_col"
-        tools:layout="@layout/fragment_mycol" />
+        android:id="@+id/nav_myhis"
+        android:name="ovh.krs.madgp.ui.myhis.myhisFragment"
+        android:label="@string/nav_his"
+        tools:layout="@layout/fragment_myhis" />
 
 
 </navigation>

@@ -25,6 +25,7 @@ public class wod1Fragment extends Fragment {
 
     private DBHelper db;
     int idToUpdate = 0;
+    //this line below ###########################################################
     String woname = "Reverse Plank";
     public wod1Fragment() {
         // Required empty public constructor
@@ -46,10 +47,11 @@ public class wod1Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         db = new DBHelper(getContext());
         //set workout duration
-        editor.putLong("duration", 60000 );
+        editor.putLong("duration", 6000 );
+        //###################################### copy the below line and paste at same place
         editor.putString("woname", woname);
         editor.commit();
-        //work out detail
+        //work out detail ##############################################this
         tv.setText(woname);
         db.insertContact("Reverse Plank", 10);
         btn.setOnClickListener(new View.OnClickListener() {

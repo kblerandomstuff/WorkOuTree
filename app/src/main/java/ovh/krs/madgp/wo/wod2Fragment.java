@@ -40,6 +40,7 @@ public class wod2Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
         editor.putLong("duration", 80000);
+        editor.putString("woname", woname);
         editor.commit();
         //work out detail
         tv.setText("Triple Lunge   ~10 times\nFor Quadriceps and Gluteus maximus");

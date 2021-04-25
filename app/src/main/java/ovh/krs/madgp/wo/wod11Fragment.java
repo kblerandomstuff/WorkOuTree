@@ -40,6 +40,7 @@ public class wod11Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
         editor.putLong("duration", 80000);
+        editor.putString("woname", woname);
         editor.commit();
         //work out detail
         tv.setText("Squat Lunge Push-up Combo   ~5 times\nFor Pectoralis, Abdominal Muscles, Serratus Anterios, Deltoid, Triceps Brachii, Vastus lateralis, Vastus medialis and Rectus femoris");

@@ -21,8 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -78,8 +77,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -129,13 +127,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -191,8 +189,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -242,13 +239,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -298,13 +295,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -354,13 +351,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -410,13 +407,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -466,13 +463,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -522,13 +519,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -578,13 +575,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -634,13 +631,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -690,6 +687,7 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo13"
                 android:layout_width="match_parent"
@@ -746,13 +744,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -802,13 +800,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_wo15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                app:contentPaddingTop="8dp">
+                android:clickable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"

@@ -40,6 +40,7 @@ public class wod5Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
         editor.putLong("duration", 90000);
+        editor.putString("woname", woname);
         editor.commit();
         //work out detail
         tv.setText("Cross-body Plank   ~8 times\nFor Rhomboideus, Deltoideus, Triceps brachii, Biceps brachii and Obliquus internus internus, Rectus femoris, Tensor fasciae latae, Tibialis anterior");

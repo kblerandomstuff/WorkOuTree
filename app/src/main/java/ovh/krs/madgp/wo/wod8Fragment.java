@@ -40,6 +40,7 @@ public class wod8Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
         editor.putLong("duration", 80000);
+        editor.putString("woname", woname);
         editor.commit();
         //work out detail
         tv.setText("Push-Up To Pike   ~10 times\nFor Deltoid and Triceps Brachii");

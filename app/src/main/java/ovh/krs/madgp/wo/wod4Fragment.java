@@ -40,6 +40,7 @@ public class wod4Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
         editor.putLong("duration", 80000);
+        editor.putString("woname", woname);
         editor.commit();
         //work out detail
         tv.setText("Side Plank Combo   ~8 times\nFor Lateral deltoid, Serratus anterior, External oblique, Gracilis, Psoas major, Pectineus, Adductor longus, Adductor brevis and Adductor magnus");

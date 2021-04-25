@@ -40,6 +40,7 @@ public class wod14Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
         editor.putLong("duration", 90000);
+        editor.putString("woname", woname);
         editor.commit();
         //work out detail
         tv.setText("Little Mermaid   ~7 times\nFor Lateral deltoid, Serratus anterior, External oblique, Gracilis, Psoas major, Pectineus, Adductor longus, Adductor brevis and Adductor magnus");

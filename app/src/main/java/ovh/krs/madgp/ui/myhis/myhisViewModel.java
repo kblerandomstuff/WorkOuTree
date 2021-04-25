@@ -1,14 +1,14 @@
-package ovh.krs.madgp.ui.mycollection;
+package ovh.krs.madgp.ui.myhis;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class mycolViewModel extends ViewModel {
+public class myhisViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public mycolViewModel() {
+    public myhisViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("@strings/c_intro");
     }

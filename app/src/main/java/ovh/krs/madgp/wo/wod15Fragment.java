@@ -40,6 +40,7 @@ public class wod15Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
         editor.putLong("duration", 110000);
+        editor.putString("woname", woname);
         editor.commit();
         //work out detail
         tv.setText("Slide Out In Push-up   ~6 times\nFor Pectoralis, Abdominal Muscles, Serratus Anterios, Lateral deltoid and Serratus anterior");

@@ -40,6 +40,7 @@ public class wod9Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
         editor.putLong("duration", 90000);
+        editor.putString("woname", woname);
         editor.commit();
         //work out detail
         tv.setText("Lunge and Mountain Climber Combo   ~7times\nFor Vastus lateralis, Vastus medialis, Rectus femoris, Deltoid and Triceps Brachii");

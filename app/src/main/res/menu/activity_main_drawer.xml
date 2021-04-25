@@ -14,7 +14,7 @@
             android:id="@+id/nav_myinfo"
             android:title="@string/nav_myinfo" />
         <item
-            android:id="@+id/nav_mycol"
-            android:title="@string/nav_col" />
+            android:id="@+id/nav_myhis"
+            android:title="@string/nav_his" />
     </group>
 </menu>

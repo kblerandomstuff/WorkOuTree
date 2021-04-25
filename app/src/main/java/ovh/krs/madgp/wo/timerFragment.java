@@ -48,6 +48,7 @@ public class timerFragment extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                btn.setVisibility(View.INVISIBLE);
                 CountDownTimer  countDownTimer = new CountDownTimer(duration, 1000) {
 
                     public void onTick(long millisUntilFinished) {
@@ -69,7 +70,6 @@ public class timerFragment extends Fragment {
 
                             fm.beginTransaction()
                                     .replace(R.id.fragment, f,"wofFragment")
-                                    //.addToBackStack(null);  // uncomment this line if you want to be able to return to the prev. fragment with "back" button
                                     .commit();
                         }
                     }

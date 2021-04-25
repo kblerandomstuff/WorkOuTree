@@ -40,6 +40,7 @@ public class wod12Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
         editor.putLong("duration", 90000);
+        editor.putString("woname", woname);
         editor.commit();
         //work out detail
         tv.setText("Walk Out and Squat   ~7 times\nFor Vastus lateralis, Biceps femoris, Gastrocnemius, Semitendinosus, Semimembranosus, Serratus Anterios, Abdominal Muscles");

@@ -40,6 +40,7 @@ public class wod10Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         //set workout duration
         editor.putLong("duration", 70000);
+        editor.putString("woname", woname);
         editor.commit();
         //work out detail
         tv.setText("Push-up To Side Plank   ~7 times\nFor Pectoralis, Abdominal Muscles, Serratus Anterios, Deltoid and Triceps Brachii");
