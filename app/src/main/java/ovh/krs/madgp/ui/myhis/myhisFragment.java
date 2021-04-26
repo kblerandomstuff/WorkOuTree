@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -31,6 +32,8 @@ public class myhisFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_myhis, container, false);
         SharedPreferences hpref = getContext().getSharedPreferences("woh", 0); // 0 - for private mode
         ListView l = root.findViewById(R.id.list);
+        TextView c = root.findViewById(R.id.tvtotal);
+        c.setText(String.valueOf(hpref.getInt("wocount", -1)));
         ArrayList<wohis> alldata = new ArrayList();
         for (int i=0;i<50;i++){
             if (hpref.getString(valueOf(i), null)!=null){

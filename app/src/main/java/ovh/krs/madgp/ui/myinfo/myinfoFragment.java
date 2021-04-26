@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
-
+import java.lang.Math;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
@@ -63,18 +63,18 @@ public class myinfoFragment extends Fragment {
         TextView h = root.findViewById(R.id.tvh);
         TextView w = root.findViewById(R.id.tvw);
         try {
-            h.setText(String.valueOf(hpref.getInt("50", -1)));
+            h.setText(String.valueOf(hpref.getInt("50", -1))+" cm");
         } catch (Exception e){
             BMI.setText("No record");
         }
         try {
-            w.setText(String.valueOf(hpref.getInt("100", -1)));
+            w.setText(String.valueOf(hpref.getInt("100", -1))+" kg");
         } catch (Exception e){
             BMI.setText("No record");
         }
 
         try {
-            BMI.setText(String.valueOf(hpref.getInt("100", -1) / (hpref.getInt("50", -1) * 100) ^ 2));
+            BMI.setText(String.valueOf((100*100*hpref.getInt("100", -1)) / Math.pow(hpref.getInt("50", -1),2)));
         } catch (Exception e){
             BMI.setText("No record for calculation");
         }
