@@ -33,9 +33,6 @@ public class HomeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
-
-
-
         home_imageView = root.findViewById(R.id.home_imageView);
         pgb = root.findViewById(R.id.determinateBar);
         history_list_btn = root.findViewById(R.id.history_list_btn);

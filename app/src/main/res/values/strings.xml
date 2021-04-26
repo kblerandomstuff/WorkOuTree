@@ -22,4 +22,9 @@
     values-round/strings.xml for round devices.
     -->
     <string name="ok">Confirm</string>
+    <string name="two">Total workout you have done:</string>
+    <string name="gender">Gender:</string>
+    <string name="height">Height:</string>
+    <string name="weight">Weight:</string>
+    <string name="bmi">BMI:</string>
 </resources>
