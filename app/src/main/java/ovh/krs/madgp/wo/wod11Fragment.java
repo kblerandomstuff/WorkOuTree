@@ -47,6 +47,8 @@ public class wod11Fragment extends Fragment {
         editor.commit();
         //work out detail
         tv.setText(woname);
+        TextView dtv = view.findViewById(R.id.dtv);
+        dtv.setText("This is a combo of Squat, Lunge and Push-up. You are required to repeat these three pose for 10 times in the following time.");
         db.insertContact("Squat Lunge Push-up Combo",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

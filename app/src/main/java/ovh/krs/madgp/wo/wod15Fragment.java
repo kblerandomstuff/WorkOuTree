@@ -47,6 +47,8 @@ public class wod15Fragment extends Fragment {
         editor.commit();
         //work out detail
         tv.setText(woname);
+        TextView dtv = view.findViewById(R.id.dtv);
+        dtv.setText("In the following time, please do it for 10 times.");
         db.insertContact("Slide Out In Push-up",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

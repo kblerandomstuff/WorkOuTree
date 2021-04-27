@@ -33,7 +33,7 @@ public class myhisFragment extends Fragment {
         SharedPreferences hpref = getContext().getSharedPreferences("woh", 0); // 0 - for private mode
         ListView l = root.findViewById(R.id.list);
         TextView c = root.findViewById(R.id.tvtotal);
-        c.setText(String.valueOf(hpref.getInt("wocount", -1)));
+        c.setText(String.valueOf(hpref.getInt("wocount", 0)));
         ArrayList<wohis> alldata = new ArrayList();
         for (int i=0;i<50;i++){
             if (hpref.getString(valueOf(i), null)!=null){

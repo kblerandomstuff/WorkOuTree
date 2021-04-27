@@ -62,20 +62,19 @@ public class myinfoFragment extends Fragment {
         g.setText(hpref.getString("gender", "No record"));
         TextView h = root.findViewById(R.id.tvh);
         TextView w = root.findViewById(R.id.tvw);
-        try {
+        if (hpref.getInt("50", -1)!=-1){
             h.setText(String.valueOf(hpref.getInt("50", -1))+" cm");
-        } catch (Exception e){
-            BMI.setText("No record");
+        } else {
+            h.setText("No record");
         }
-        try {
+        if (hpref.getInt("100", -1)!=-1){
             w.setText(String.valueOf(hpref.getInt("100", -1))+" kg");
-        } catch (Exception e){
-            BMI.setText("No record");
+        } else {
+            w.setText("No record");
         }
-
-        try {
+        if ((hpref.getInt("50", -1)!=-1)&&(hpref.getInt("100", -1)!=-1)){
             BMI.setText(String.valueOf((100*100*hpref.getInt("100", -1)) / Math.pow(hpref.getInt("50", -1),2)));
-        } catch (Exception e){
+        } else {
             BMI.setText("No record for calculation");
         }
         FloatingActionButton fab = root.findViewById(R.id.fab);

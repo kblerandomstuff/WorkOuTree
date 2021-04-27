@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sports</string>
+    <string name="app_name">WorkOuTree</string>
     <string name="hi">hi</string>
     <string name="hello">hello</string>
     <string name="hi1">hi1</string>
@@ -27,4 +27,6 @@
     <string name="height">Height:</string>
     <string name="weight">Weight:</string>
     <string name="bmi">BMI:</string>
+    <string name="tb">workout to bloom</string>
+    <string name="tg">Trees you already planted:</string>
 </resources>

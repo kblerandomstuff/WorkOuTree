@@ -47,6 +47,8 @@ public class wod5Fragment extends Fragment {
         editor.commit();
         //work out detail
         tv.setText(woname);
+        TextView dtv = view.findViewById(R.id.dtv);
+        dtv.setText("Cross Body Planks is a core body exercise that strengthens all the muscle in your abdominals, lower back as well as arms and shoulders. The unique part of the Cross Body Plank is the cross-under motion of the knee toward the opposite elbow. This engages your oblique muscles that shape your waistline and strengthen you core strength and stability. Any type of plank is great for training your core, but if you learn how to do Cross Body Planks, you are getting a move that targets virtually every muscle of your core in a very powerful way. You won’t need to do many of these to get results!");
         db.insertContact("Cross-body Plank",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

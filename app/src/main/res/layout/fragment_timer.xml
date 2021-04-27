@@ -39,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
+            android:padding="8dp"
             android:text="Start" />
     </LinearLayout>
 

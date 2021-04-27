@@ -47,6 +47,10 @@ public class wod8Fragment extends Fragment {
         editor.commit();
         //work out detail
         tv.setText(woname);
+        TextView dtv = view.findViewById(R.id.dtv);
+        dtv.setText("Start off at the top of a pushup position on the floor, with your arms straight and your hands should be shoulder-width apart. Then lift your hips and walk your feet in closer to your hands so that your body forms an upside down V. Your legs and arms should stay as straight as possible." +
+                "From here, bend your elbows and lower your upper body down and forwards, until the top of your head nearly touches the floor. Your head should be infront of your hands once your elbows bend. Imagine, your hands are the bottom two points of a triangle, and your head moves forward as you lower down to make the top point of the triangle."+
+                "From the bottom position, push down into the floor hard with your hands and keep your elbows in close to your body to straighten your arms and return to the start position. Make sure that as you push your body upwards, you maintain the angle at your hips rather than pressing your chest away from the floor and collapsing at the hips.\n\nIn the following time, please do it for 10 times.");
         db.insertContact("Push-Up To Pike",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

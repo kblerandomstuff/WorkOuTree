@@ -47,6 +47,8 @@ public class wod6Fragment extends Fragment {
         editor.commit();
         //work out detail
         tv.setText(woname);
+        TextView dtv = view.findViewById(R.id.dtv);
+        dtv.setText("Lie on your back with your legs extended and back straight. Keep you hips level and your lower back down on the floor.Bend your right knee and hug your knee towards your chest, placing hands on your right leg. Then breath deeply and hold this position for 10-30 seconds. Now, relax and lower the knee to starting position and repeat on opposite side.\n\nIn the following time, please do it for 3 times.");
         db.insertContact("Knees To Chest",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

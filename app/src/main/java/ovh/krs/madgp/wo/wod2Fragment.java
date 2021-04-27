@@ -47,6 +47,8 @@ public class wod2Fragment extends Fragment {
         editor.commit();
         //work out detail
         tv.setText(woname);
+        TextView dtv = view.findViewById(R.id.dtv);
+        dtv.setText("This combines three lunge variations – reverse, forward, and walking – into one seamless motion. It starts with a reverse lunge using the lead leg, transitions into a walking lunge using the other leg, and then finishes with a forward lunge using the lead leg all over again.\n\nIn the following time, please do it for 10 times.");
         db.insertContact("Triple Lunge",80);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

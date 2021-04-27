@@ -4,6 +4,7 @@ import android.graphics.*
 import android.graphics.drawable.AnimatedImageDrawable
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import kotlinx.android.synthetic.main.activity_wo1.*
 import ovh.krs.madgp.R
 
