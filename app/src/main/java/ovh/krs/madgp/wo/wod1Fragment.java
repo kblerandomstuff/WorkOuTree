@@ -47,7 +47,7 @@ public class wod1Fragment extends Fragment {
         SharedPreferences.Editor editor = pref.edit();
         db = new DBHelper(getContext());
         //set workout duration
-        editor.putLong("duration", 6000 );
+        editor.putLong("duration", 60000 );
         //###################################### copy the below line and paste at same place
         editor.putString("woname", woname);
         editor.commit();
