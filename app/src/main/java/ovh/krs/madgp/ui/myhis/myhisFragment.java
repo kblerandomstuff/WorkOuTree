@@ -30,7 +30,7 @@ public class myhisFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         myhisViewModel = new ViewModelProvider(this).get(myhisViewModel.class);
         View root = inflater.inflate(R.layout.fragment_myhis, container, false);
-        SharedPreferences hpref = getContext().getSharedPreferences("woh", 0); // 0 - for private mode
+        SharedPreferences hpref = getContext().getSharedPreferences("woh", 0);
         ListView l = root.findViewById(R.id.list);
         TextView c = root.findViewById(R.id.tvtotal);
         c.setText(String.valueOf(hpref.getInt("wocount", 0)));

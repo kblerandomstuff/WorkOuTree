@@ -13,8 +13,6 @@
         <activity
             android:name=".ui.add.Addinfo"
             android:label="@string/title_activity_addinfo"></activity>
-        <activity android:name=".DateHistory" />
-        <activity android:name=".DateItem" />
         <activity android:name=".wo.wo1activity" />
         <activity android:name=".wo.wo2activity" />
         <activity android:name=".wo.wo3activity" />

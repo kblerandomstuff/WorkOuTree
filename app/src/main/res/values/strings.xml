@@ -1,26 +1,13 @@
 <resources>
     <string name="app_name">WorkOuTree</string>
-    <string name="hi">hi</string>
-    <string name="hello">hello</string>
-    <string name="hi1">hi1</string>
-    <string name="Lok">Lok</string>
-    <string name="Him">Him</string>
-    <string name="Shuen">Shuen</string>
-    <string name="Lok1">Lok1</string>
     <string name="nav_home">Home</string>
     <string name="nav_startwo">Start workout</string>
     <string name="nav_myinfo">My body information</string>
     <string name="nav_about">About app</string>
     <string name="nav_his">My Workout History</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="hi2">hi2</string>
     <string name="fabdes">Add my body information record</string>
     <string name="title_activity_addinfo">Addinfo</string>
-    <!--
-    This string is used for square devices and overridden by hello_world in
-    values-round/strings.xml for round devices.
-    -->
     <string name="ok">Confirm</string>
     <string name="two">Total workout you have done:</string>
     <string name="gender">Gender:</string>

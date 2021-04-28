@@ -9,22 +9,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-
 import ovh.krs.madgp.R;
 
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
-    private ImageView tree;
     private ProgressBar pgh;
-    private Button history_list_btn;
-
-
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

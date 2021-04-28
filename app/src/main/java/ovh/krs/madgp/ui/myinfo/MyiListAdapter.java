@@ -18,9 +18,7 @@ public class MyiListAdapter extends ArrayAdapter<bi> {
     public MyiListAdapter(Context context, ArrayList<bi> dataList) {
         super(context, R.layout.l3c,dataList);
         this.data = dataList;
-
-    }//constructor
-
+    }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
@@ -36,10 +34,7 @@ public class MyiListAdapter extends ArrayAdapter<bi> {
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-
-        //you can use data.get(position) too
         bi myDataItem = getItem(position);
-
         viewHolder.t.setText(myDataItem.gett());
         viewHolder.h.setText(String.valueOf(myDataItem.geth())+" kg");
         viewHolder.w.setText(String.valueOf(myDataItem.getw())+" cm");
@@ -51,4 +46,4 @@ public class MyiListAdapter extends ArrayAdapter<bi> {
         TextView h;
         TextView w;
     }
-}//MyDataListAdapter
+}

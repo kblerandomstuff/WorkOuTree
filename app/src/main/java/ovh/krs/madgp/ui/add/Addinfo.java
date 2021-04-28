@@ -1,7 +1,5 @@
  package ovh.krs.madgp.ui.add;
 
-import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -9,16 +7,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
-import android.widget.Switch;
-import android.widget.TextView;
 import android.widget.Toast;
-
 import ovh.krs.madgp.R;
 import androidx.appcompat.app.AppCompatActivity;
-
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -27,7 +19,6 @@ import static java.lang.String.valueOf;
 
 public class Addinfo extends AppCompatActivity {
 
-    private TextView mTextView;
     private EditText et_kg, et_m;
 
     @Override
@@ -37,12 +28,9 @@ public class Addinfo extends AppCompatActivity {
         SharedPreferences epref = getApplicationContext().getSharedPreferences("mybody", 0);
         SharedPreferences.Editor editor = epref.edit();
         String[] g = {"Male", "Female"};
-
-        mTextView = (TextView) findViewById(R.id.text);
         et_kg = findViewById(R.id.et_kg);
         et_m = findViewById(R.id.et_m);
         Button btn = findViewById(R.id.button);
-        //Getting the instance of Spinner and applying OnItemSelectedListener on it
         Spinner spin = (Spinner) findViewById(R.id.spinner);
         spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -54,11 +42,8 @@ public class Addinfo extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
             });
-
-        //Creating the ArrayAdapter instance having the country list
         ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, g);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        //Setting the ArrayAdapter data on the Spinner
         spin.setAdapter(aa);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

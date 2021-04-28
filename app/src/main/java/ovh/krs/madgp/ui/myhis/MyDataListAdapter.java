@@ -18,8 +18,7 @@ public class MyDataListAdapter extends ArrayAdapter<wohis> {
         super(context, R.layout.l2c,dataList);
         this.data = dataList;
 
-    }//constructor
-
+    }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
@@ -34,10 +33,7 @@ public class MyDataListAdapter extends ArrayAdapter<wohis> {
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-
-        //you can use data.get(position) too
         final wohis myDataItem = getItem(position);
-
         viewHolder.t.setText(myDataItem.gett());
         viewHolder.n.setText(myDataItem.getn());
         return convertView;
@@ -47,4 +43,4 @@ public class MyDataListAdapter extends ArrayAdapter<wohis> {
         TextView t;
         TextView n;
     }
-}//MyDataListAdapter
+}

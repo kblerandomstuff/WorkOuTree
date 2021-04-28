@@ -27,15 +27,10 @@ import static java.lang.String.valueOf;
 public class myinfoFragment extends Fragment {
 
     private myinfoViewModel myinfoViewModel;
-    //private DBHelper db;
-    //private ListView listView;
     private TextView BMI;
-    //private int kg,m;
-    //private Button bt_up;
     private ListView l;
 
     public myinfoFragment() {
-        // Required empty public constructor
     }
 
     @Override
@@ -47,7 +42,7 @@ public class myinfoFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         myinfoViewModel = new ViewModelProvider(this).get(myinfoViewModel.class);
         View root = inflater.inflate(R.layout.fragment_myinfo, container, false);
-        SharedPreferences hpref = getContext().getSharedPreferences("mybody", 0); // 0 - for private mode
+        SharedPreferences hpref = getContext().getSharedPreferences("mybody", 0);
         ListView l = root.findViewById(R.id.list);
         ArrayList<bi> alldata = new ArrayList();
         for (int i=0;i<50;i++){
@@ -56,7 +51,6 @@ public class myinfoFragment extends Fragment {
         }
         MyiListAdapter adapter = new MyiListAdapter (getContext(), alldata);
         l.setAdapter(adapter);
-
         BMI = root.findViewById(R.id.tvbmi);
         TextView g = root.findViewById(R.id.tvg);
         g.setText(hpref.getString("gender", "No record"));
@@ -85,16 +79,6 @@ public class myinfoFragment extends Fragment {
                 startActivity(intent);
             }
         });
-/*
-        Button btn = root.findViewById(R.id.button);
-        btn.setVisibility(View.INVISIBLE);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), DateHistory.class);
-                startActivity(intent);
-            }
-        });*/
         return root;
     }
 
