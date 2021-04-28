@@ -47,6 +47,8 @@ public class wod12Fragment extends Fragment {
         editor.commit();
         //work out detail
         tv.setText(woname);
+        TextView dtv = view.findViewById(R.id.dtv);
+        dtv.setText("In the following time, please do it for 10 times.");
         db.insertContact("Walk Out and Squat",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

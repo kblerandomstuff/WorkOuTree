@@ -47,6 +47,8 @@ public class wod3Fragment extends Fragment {
         editor.commit();
         //work out detail
         tv.setText(woname);
+        TextView dtv = view.findViewById(R.id.dtv);
+        dtv.setText("Perform a single leg hip thrust until your torso is parallel to the floor and you have a straight line going from your knee to your shoulder (the tibia will be about perpendicular to the floor). From there, maintain that line (which means you have to keep the glutes contracted) while you slide your leg out to full extension. Tap your butt down, return your foot to the starting position, and repeat. The key is to control the eccentric.\n\nIn the following time, please do it for 10 times.");
         db.insertContact("Single Leg Curl Combo",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

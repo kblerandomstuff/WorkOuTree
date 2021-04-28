@@ -47,6 +47,8 @@ public class wod4Fragment extends Fragment {
         editor.commit();
         //work out detail
         tv.setText(woname);
+        TextView dtv = view.findViewById(R.id.dtv);
+        dtv.setText("Start in standard plank position. Bring legs together until your heels touch. Lean to your left while lifting right arm up toward the ceiling until you are balanced on one hand. Repeat on the other side.\n\nIn the following time, please do it for 10 times.");
         db.insertContact("Side Plank Combo",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -47,6 +47,11 @@ public class wod7Fragment extends Fragment {
         editor.commit();
         //work out detail
         tv.setText(woname);
+        TextView dtv = view.findViewById(R.id.dtv);
+        dtv.setText("To do the Lunge Burpee, start standing tall and then place your hands on the ground and jump your feet back into a high plank position." +
+                "Jump back into the plank and then jump your feet back into your hands as quickly as you can without being sloppy in the plank position. Stand up, and as you stand up, jump into a lunge on one side. You want to land in a lunge, sinking as low as you can and then jump out of the lunge to repeat the burpee."+
+                "Jump back into plank and then jump back up, lunging on the other side this time. Keep alternating sides with each burpee."+
+                "Beginners can step into a lunge and even step back into plank instead of jumping.\n\nIn the following time, please do it for 10 times.");
         db.insertContact("Lunge and Burpee",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -53,13 +53,13 @@ public class timerFragment extends Fragment {
 
                     public void onTick(long millisUntilFinished) {
                         long millis = millisUntilFinished;
+                        pb.setMax(Long.valueOf(duration).intValue());
+                        pb.setProgress(Long.valueOf(duration-(millis-1000)).intValue());
                         String cs = String.format("%02d:%02d",
                                 TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
                                 TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
                         tv.setText(cs);
-                        //progress bar dont work
-                        double progress = millisUntilFinished / duration;
-                        pb.setProgress((int) progress);
+
                     }
 
                     public void onFinish() {
@@ -78,4 +78,7 @@ public class timerFragment extends Fragment {
         });
 
 
-    }}
+    }
+    public void onBackPressed() {
+    }
+}

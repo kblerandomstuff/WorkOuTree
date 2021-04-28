@@ -6,13 +6,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-
+import java.lang.Math;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
@@ -22,11 +18,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-import ovh.krs.madgp.DBHelper;
 import ovh.krs.madgp.R;
-import ovh.krs.madgp.ui.Addinfo;
-import ovh.krs.madgp.ui.myhis.MyDataListAdapter;
-import ovh.krs.madgp.ui.myhis.wohis;
+import ovh.krs.madgp.ui.add.Addinfo;
 
 import static java.lang.String.valueOf;
 
@@ -34,12 +27,11 @@ import static java.lang.String.valueOf;
 public class myinfoFragment extends Fragment {
 
     private myinfoViewModel myinfoViewModel;
-    private DBHelper db;
-    private ListView listView;
-    private EditText et_kg, et_m;
+    //private DBHelper db;
+    //private ListView listView;
     private TextView BMI;
-    private int kg,m;
-    private Button bt_up;
+    //private int kg,m;
+    //private Button bt_up;
     private ListView l;
 
     public myinfoFragment() {
@@ -65,18 +57,26 @@ public class myinfoFragment extends Fragment {
         MyiListAdapter adapter = new MyiListAdapter (getContext(), alldata);
         l.setAdapter(adapter);
 
-        //BMI = root.findViewById(R.id.BMI);
-/*
-        bt_up.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                BMI.setText(String.valueOf(et_kg));
-                Integer.parseInt(et_kg.getText().toString());
-                Integer.parseInt(et_m.getText().toString());
-                BMI.setText(String.valueOf(kg/m^2));
-            }
-        }); */
-
+        BMI = root.findViewById(R.id.tvbmi);
+        TextView g = root.findViewById(R.id.tvg);
+        g.setText(hpref.getString("gender", "No record"));
+        TextView h = root.findViewById(R.id.tvh);
+        TextView w = root.findViewById(R.id.tvw);
+        if (hpref.getInt("50", -1)!=-1){
+            h.setText(String.valueOf(hpref.getInt("50", -1))+" cm");
+        } else {
+            h.setText("No record");
+        }
+        if (hpref.getInt("100", -1)!=-1){
+            w.setText(String.valueOf(hpref.getInt("100", -1))+" kg");
+        } else {
+            w.setText("No record");
+        }
+        if ((hpref.getInt("50", -1)!=-1)&&(hpref.getInt("100", -1)!=-1)){
+            BMI.setText(String.valueOf((100*100*hpref.getInt("100", -1)) / Math.pow(hpref.getInt("50", -1),2)));
+        } else {
+            BMI.setText("No record for calculation");
+        }
         FloatingActionButton fab = root.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

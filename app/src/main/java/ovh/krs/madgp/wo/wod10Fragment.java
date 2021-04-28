@@ -47,6 +47,13 @@ public class wod10Fragment extends Fragment {
         editor.commit();
         //work out detail
         tv.setText(woname);
+        TextView dtv = view.findViewById(R.id.dtv);
+        dtv.setText("Begin in plank position." +
+                "Bend your elbows lowering into a push-up." +
+                "Straighten your arms and lift your right arm toward the ceiling, twisting into a side plank to make a T shape with your body." +
+                "Rotate back to plank, placing your right palm on the floor to lower into a push-up." +
+                "This time as you straighten your arms, rotate to the left lifting the left up. Return to plank." +
+                "Continue this exercise for 45 seconds, alternating between sides. Rest for 15 seconds.\n\nIn the following time, please do it for 10 times.");
         db.insertContact("Push-up To Side Plank",10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

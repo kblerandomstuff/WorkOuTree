@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADGP">
         <activity
-            android:name=".ui.Addinfo"
+            android:name=".ui.add.Addinfo"
             android:label="@string/title_activity_addinfo"></activity>
         <activity android:name=".DateHistory" />
         <activity android:name=".DateItem" />
